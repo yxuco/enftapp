@@ -51,7 +51,7 @@ function App() {
   const [tokenURI, setTokenURI] = useState(
     "https://ipfs.io/ipfs/QmUqfxdhwktSbuz8kc8rVmWDPP6xUgrwaBAEd3KrKtxfkZ"
   );
-  const [tokenId, setTokenId] = useState(0);
+  const [tokenId, setTokenId] = useState(1);
   const [metadata, setMetadata] = useState("");
 
   const refreshData = async () => {
@@ -163,6 +163,7 @@ function App() {
                 size="4"
                 type="text"
                 name="tokenId"
+                value="1"
                 onChange={(t) => setTokenId(t.target.value)}
               />
             </div>
