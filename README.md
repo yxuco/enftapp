@@ -1,6 +1,8 @@
 # Sample frontend of dApp for NFT contract
 
-Create frontend app for [sample NFT contract](https://github.com/yxuco/enft).
+Create a [React](https://reactjs.org) app for [sample NFT contract](https://github.com/yxuco/enft), which uses [MetaMask](https://metamask.io/) and [ethers.js](https://docs.ethers.io/v5/) to connect to the Ethereum network.
+
+Similar approach also applies to development of frontend dApp using [Vue](https://vuejs.org/).
 
 ## Create project
 
@@ -27,7 +29,7 @@ yarn react-app:start
 
 ## Add application logic to interact with NFT contract
 
-We use [ethers.js](https://docs.ethers.io/v5/) to interact with ethereum via [metamask](https://metamask.io/).  So, install the dependency:
+We use [ethers.js](https://docs.ethers.io/v5/) to interact with ethereum via [MetaMask](https://metamask.io/).  So, install the dependency:
 
 ```bash
 cd packages/react-app
