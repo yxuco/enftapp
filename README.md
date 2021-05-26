@@ -48,21 +48,21 @@ Edit view styles of other visual components in [index.js](./packages/react-app/s
 
 ## Use the React App to mint and query NFT
 
-This app uses MetaMask to connect to the `Rinkeby` testnet.  So, you must login to an account in the MetaMask chrome plugin, and connect to the `Rinkeby` testnet from the Chrome browser.
+This app uses MetaMask to connect to the `Rinkeby` testnet.  So, you must login to an account in the MetaMask chrome plugin, and connect to the `Rinkeby` testnet from a Chrome browser.
 
-When you start the UI app by the command `yarn react-app:start`, the UI page should be loaded in Chrome browser at URL <http://localhost:3000/>.
+When you start the UI app by `yarn react-app:start`, the UI page should be loaded in Chrome browser at URL <http://localhost:3000/>.
 
 Connect to your wallet by clicking the button `Connect Wallet` at the top-right corner, and choose `MetaMask`.
 
-Click the `Refresh Count` button, it should display the number of sample NFT tokens that has already been created, and the balance of ETH in your account.
+Click the `Refresh Count` button, it should display the number of sample NFT tokens that have already been created, and the balance of ETH in your account.
 
-Click the `Mint Token` button will create a new sample NFT token with metadata specified by the `Token URI` and transfer the token to the specified `Recipient`.  The `Token URI` is the IPFS address of a previously uploaded metadata file.  The token count should increase by 1 if the new token is created successfully.  If you minted a token for your own account, you can see the asset in MetaMask.  To make the asset show in the MetaMask plugin popup, you can click the `Add Token` button in MetaMask, and specify the address of the sample NFT contract deployed on the `Rinkeby` testnet.
+Click the `Mint Token` button will create a new sample NFT token with metadata specified by the `Token URI` and transfer the token to the specified `Recipient`.  The `Token URI` is the IPFS address of a previously uploaded metadata file.  The token count should increase by `1` if the new token is created successfully.  If you minted a token for your own account, you can see the asset in MetaMask.  To make the asset show in the MetaMask plugin popup, you can click the `Add Token` button in MetaMask, and specify the address of the sample NFT contract deployed on the `Rinkeby` testnet.
 
 Enter a number less than or equal to the token count in the input field `Token URI`, then click the `Get Metadata` button, it will fetch the name of the metadata file of the specified NFT token, and display the result below the button.
 
 ## Use Vue.js instead of React
 
-Alternatively, to develop UI using [Vue.js](https://vuejs.org/), you can create the project using command:
+Alternatively, to develop a frontend app using [Vue.js](https://vuejs.org/), you can create the project using command:
 
 ```bash
 yarn create eth-app enftapp --framework vue
