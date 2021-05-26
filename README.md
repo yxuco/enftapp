@@ -36,7 +36,7 @@ yarn add ethers
 
 [Install MetaMask for Chrome](https://metamask.io/download.html), and create an account for testing.
 
-Add ABI defintion of the [sample contract](https://github.com/yxuco/enft), i.e., [enft.json](./packages/contracts/src/abis/enft.json), which is extracted from the contract build result in `artifacts/contracts/ENFT.sol/ENFT.json` if the contract is built using `hardhat`.
+Add ABI defintion of the [sample contract](https://github.com/yxuco/enft), i.e., [enft.json](./packages/contracts/src/abis/enft.json), which is extracted from the contract build result in `artifacts/contracts/ENFT.sol/ENFT.json` if the contract is built using [hardhat](https://hardhat.org).
 
 Add the reference and deployed address of the contract to [abis.js](./packages/contracts/src/abis.js) and [addresses.js](./packages/contracts/src/addresses.js).
 
@@ -49,7 +49,7 @@ Edit styles of other visual components in [index.js](./packages/react-app/src/co
 Alternatively, to develop UI using [Vue.js](https://vuejs.org/), you can create the project using command:
 
 ```bash
-yarn create eth-app enftapp --frmework vue
+yarn create eth-app enftapp --framework vue
 ```
 
 ## Use indexed query in dApp
