@@ -6,13 +6,13 @@ Similar approach also applies to development of frontend dApp using [Vue](https:
 
 ## Create project
 
-Install `yarn` which is similar to `npm`, but required to generate frontend project by using [create-eth-app](https://github.com/paulrberg/create-eth-app).
+Install `yarn` which is similar to `npm`, but it is required to generate frontend project by using [create-eth-app](https://github.com/paulrberg/create-eth-app).
 
 ```bash
 npm install -g yarn
 ```
 
-Create `react` app for dApp:
+Create [React](https://reactjs.org) UI for dApp:
 
 ```bash
 mkdir frontend
@@ -20,7 +20,7 @@ cd frontend
 yarn create eth-app enftapp
 ```
 
-The generated [README.md](./README-gen.md) describes commands for build and start the frontend project `enftapp`, e.g., to start the app, enter
+The generated [README.md](./README-gen.md) describes commands to build and start the frontend project `enftapp`, e.g., to start the app, enter
 
 ```bash
 cd entfapp
@@ -44,7 +44,7 @@ Add the reference and deployed address of the contract to [abis.js](./packages/c
 
 Edit [App.js](./packages/react-app/src/App.js) to add required application logic.  Add stylesheet [App.css](./packages/react-app/src/App.css) if necessary.
 
-Edit styles of other visual components in [index.js](./packages/react-app/src/components/index.js).
+Edit view styles of other visual components in [index.js](./packages/react-app/src/components/index.js).
 
 ## Use Vue.js instead of react
 
@@ -60,7 +60,7 @@ The generated [README.md](./README-gen.md) includes instructions to setup `subgr
 
 ## Note: setup Visual Studio Code
 
-Add `code` path to `PATH`, so you can type `code` in commandline to launch vscode.  In VS Code, open the Command Palette(`Command+Shift+P`), type `shell command` to find and execute `Shell Command: Install 'code' command in PATH`.
+On a Mac, you can add `code` path to `$PATH` as follows, so you can type `code` in commandline to launch vscode.  In VS Code, open the Command Palette(`Command+Shift+P`), type `shell command` to find and execute `Shell Command: Install 'code' command in PATH`.
 
 Use `Prettier+` plugin to format react source code.  The default js formatter does not work well for `react-app`.  I installed the `Prettier+` plugin, and open the `Settings`(`Command+,`), and click the link `Edit in settings.json`, change the `javascript` to use the following settings.
 
